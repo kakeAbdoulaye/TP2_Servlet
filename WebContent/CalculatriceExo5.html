@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculette</title>
+	</head>
+	<body>
+
+		<div>
+			<h1><i><b>Calculatrice</b></i></h1>
+		</div>
+		<div>
+			<form action="/TP2_Servlet/calculette" method="get">
+				<div>
+					<label> Entrer la valeur 1 : </label>  <input type="number" name="valeur1"/><br/>
+					<label>Enter la valeur 2 : </label> <input type="number" name="valeur2"/><br/><br>
+				</div>
+				<div>
+					<input type="radio" name="operateur" value="op+" /><label for="op+"> + </label><br>
+					<input type="radio" name="operateur" value="op-" /><label for="op-"> - </label><br>
+					<input type="radio" name="operateur" value="op/" /><label for="op/"> / </label><br>
+					<input type="radio" name="operateur" value="op*" /><label for="op*"> * </label><br>
+					<input type="radio" name="operateur" value="op%" /><label for="op%"> % </label><br>
+				</div>
+				<div>
+					<br/>
+					<input type="submit" value="Calculer"/>
+				</div>
+			</form>
+		</div>
+
+	</body>
+</html>
