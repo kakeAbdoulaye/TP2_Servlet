@@ -11,6 +11,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+/**
+vive la richesse bro */
 
 public class Heure_Date extends HttpServlet {
 
