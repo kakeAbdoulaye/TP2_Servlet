@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
-kake*/
+kake */
 
 public class Heure_Date extends HttpServlet {
 
