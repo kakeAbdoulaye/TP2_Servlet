@@ -11,8 +11,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
-kake Abdoulaye de chez chef kake , un clone vient de modifier bebe*/
+
 
 
 public class Heure_Date extends HttpServlet {
