@@ -25,8 +25,8 @@ public class PageWebImage extends HttpServlet {
 	
 	public void doPost(HttpServletRequest request , HttpServletResponse response) throws ServletException , IOException
 	{
-		/*response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");*/
+		response.setContentType("text/html");
+		response.setCharacterEncoding("UTF-8");
 		
 		final String path =getServletContext().getRealPath("/")+"newImage.jpg";
 		System.out.println(path);
