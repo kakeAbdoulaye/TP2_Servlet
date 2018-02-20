@@ -58,22 +58,27 @@ public class NoteEtudiant extends HttpServlet {
 			 inserState.setInt(4, Integer.parseInt(request.getParameter("noteent")));
 			 inserState.executeUpdate();
 			 inserState.close();
+		
 			 
 			 // Calculer la moyenne et afficher 
 			 Statement moyenRequete = connexion.createStatement();
-			 ResultSet moyenneNote = moyenRequete.executeQuery("Select AVG(Note) from etudiants;");
-			 double moyenne = moyenneNote.getDouble(1);
-			 htmltext.append("<html>");
+			 ResultSet moyenneNote = moyenRequete.executeQuery("Select AVG(Note) as Moyenne from etudiants");
+			moyenneNote.next();
+			double moyenne = moyenneNote.getDouble("Moyenne");
+			htmltext.append("<html>");
 			htmltext.append("<head>");
 			htmltext.append("<title>");
 			htmltext.append(" Moyenne des Notes des etudiants  ");
 			htmltext.append("</title>");
 			htmltext.append("</head>");
 			htmltext.append("<body>");
+		
 			htmltext.append("La moyenne des notes des etudiants  : "+moyenne);
 			htmltext.append("</body>");
 			htmltext.append("</html>");
 			out.println(htmltext);
+			moyenneNote.close();
+			moyenRequete.close();
 			 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
