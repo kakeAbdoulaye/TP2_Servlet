@@ -68,6 +68,15 @@
 		<servlet-name>Note_Etudiant</servlet-name>
 		<url-pattern>/noteEtudiant</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PageWebImage</servlet-name>
+		<servlet-class>Exercices.Exo7.PageWebImage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PageWebImage</servlet-name>
+		<url-pattern>/image</url-pattern>
+	</servlet-mapping>
 
 	
 	
