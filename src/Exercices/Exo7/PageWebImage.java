@@ -29,7 +29,6 @@ public class PageWebImage extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		
 		final String path =getServletContext().getRealPath("/")+"newImage.jpg";
-		System.out.println(path);
 		final Part filepart = request.getPart("selectedImage");
 		final String filename =getFileName(filepart);
 		
